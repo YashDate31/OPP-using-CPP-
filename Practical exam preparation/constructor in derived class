@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+class base
+{
+	public:
+		int x,y;
+
+		base(int a ,int b)
+		{
+			x=a;
+			y=b;
+		}
+
+		void display()
+		{       cout<<"We are in base class contructor";
+			cout<<"You have entered: "<<x<<"&"<<y<<endl;
+		}
+
+
+};
+class derived: public base
+{
+	int o,p;
+	derived(int a, int b,int c, int d): base(a,b)
+	{
+	     o=c;
+	     p=d;
+	}
+	void display1()
+	{
+	     cout<<"we are in derived class and u have entered:"<<o<<"&"<<p<<endl;
+
+	}
+
+};
+
+int main()
+{      
+	derived d1(10,20,30,40);
+	d1.display();
+	d1.display1();
+	return 0;
+}

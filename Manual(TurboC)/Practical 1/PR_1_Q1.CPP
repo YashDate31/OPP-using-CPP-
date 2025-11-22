@@ -1,5 +1,5 @@
 
-#include <iostream>
+#include<iostream>
 #include<conio.h>
 
 void main()
@@ -12,3 +12,4 @@ void main()
 	cout << "Value of y is: " << y;
 
 	getch();
+}
