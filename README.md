@@ -50,7 +50,8 @@ A comprehensive collection of C++ programs demonstrating all major Object-Orient
 
 ```
 📦 OPP-using-C-
-├── 📁 ALL u/                          # Comprehensive examples organized by topic
+├── 📁 OOP_Concepts/                   # Comprehensive examples organized by topic
+│   ├── 📁 00_Basics/
 │   ├── 📁 01_IO_Expressions/
 │   ├── 📁 02_Scope_Memory_Manipulators/
 │   ├── 📁 03_Type_Casting/
@@ -78,12 +79,7 @@ A comprehensive collection of C++ programs demonstrating all major Object-Orient
 │   ├── 📁 25_Sequential_File_IO/
 │   └── 📁 26_Binary_File_IO/
 ├── 📁 Manual(TurboC)/                  # Practical assignments
-├── 📁 Practice/                        # Additional practice programs
-├── 📁 Friend function/
-├── 📁 Static Function and data member/
-├── 📁 Structure/
-├── 📁 Type casting/
-└── 📁 object as argument/
+└── 📁 Trash/
 ```
 
 ## 🚀 Getting Started
@@ -102,7 +98,7 @@ A comprehensive collection of C++ programs demonstrating all major Object-Orient
 
 2. **Navigate to any topic folder**
    ```bash
-   cd "ALL u/01_IO_Expressions"
+   cd "OOP_Concepts/01_IO_Expressions"
    ```
 
 3. **Compile and run any program**

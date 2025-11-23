@@ -1,0 +1,13 @@
+# Copying File Content
+
+## Concept
+Copying the content of one file to another involves:
+1. Opening the source file in **read mode** (`ifstream`).
+2. Opening the destination file in **write mode** (`ofstream`).
+3. Reading character by character (or line by line) from the source and writing it to the destination.
+4. Closing both files.
+
+## Functions Used
+- `get()`: Read a single character.
+- `put()`: Write a single character.
+- `eof()`: Check for end of file.
