@@ -1,41 +1,42 @@
-// * Overloading the binary plus (+) operator to add two Complex objects.
+#include<iostream>
 using namespace std;
 
+class Complex{
+    public:
+        int real, img;
+        
+        void getdata()
+        {
+            cout<<"Enter real and imaginary number "<<endl;
+            cin>>real>>img;
+        }
 
-#include <iostream>
+        void display()
+        {
+            cout<<real<<"+"<<img<<"i"<<endl;
+        }
 
-class Complex {
-private:
-    float real, imag;
-public:
-    Complex(float r = 0, float i = 0) : real(r), imag(i) {}
+        Complex operator +(Complex &c)
+        {
+            Complex temp;
 
-    // Overload the + operator
-    Complex operator+(const Complex& obj) {
-        Complex temp;
-        temp.real = real + obj.real;
-        temp.imag = imag + obj.imag;
-        return temp;
-    }
+            temp.real  = real + c.real;
+            temp.img = img + c.img;
 
-    void print() {
-        cout << real << " + " << imag << "i" << endl;
-    }
+            return temp;
+        }
+
+    
 };
 
-int main() {
-    Complex c1(3.0, 4.0);
-    Complex c2(2.0, 5.0);
-    Complex c3;
+int main()
+{
+    Complex c1,c2,c3;
+    c1.getdata();
+    c2.getdata();
+    c3 = c1 + c2;
+    c3.display();
 
-    c3 = c1 + c2; // Calls the operator+ member function
-
-    c1.print();
-    cout << " + ";
-    c2.print();
-    cout << " = ";
-    c3.print();
 
     return 0;
 }
-
